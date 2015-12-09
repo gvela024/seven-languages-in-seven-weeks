@@ -21,3 +21,8 @@ print "\n\n"
 # I think i saw the range operator before but it's pretty cool that you can make
 # an array on the fly like that.
 (1..16).each_slice(4) { |i| print i[0], "\t", i[1], "\t", i[2], "\t", i[3], "\n" }
+
+print "\n\n"
+
+# I like this one better
+(1..16).each_slice(4) { |sub_array| sub_array.each { |i| print i, "\t" }; print "\n" }
