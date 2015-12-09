@@ -9,7 +9,6 @@ while player_guess != number
 
   puts 'Too high.' if player_guess > number
   puts 'Too low.' if player_guess < number
-
 end
 
 puts 'Correct!'
